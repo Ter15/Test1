@@ -16,8 +16,6 @@ namespace ejemplo2
             solution = EquationSolvers.SolveEquation(6.0, 7.0);
 
 
-
-
             Console.WriteLine("Hello World!");
 
             double l1;
@@ -38,14 +36,20 @@ namespace ejemplo2
             double A5;
             A5 = Geometric.GetRectangleArea(5.0, 3.0);
 
-            double T1;
+            int T1;
             T1 = Utils.GetMinValue(8, -6);
 
+            int J2;
+            J2 = Utils.GetMaxValue(8, -6);
+
+            bool Q2;
+            Q2 = Utils.IsEver(44);
+
+            Ejercicios.Ejercicio01();
+
+            Ejercicios.Ejercicio02(13);
+
         }
-
-
-
-
 
 
     }
