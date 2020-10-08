@@ -53,6 +53,7 @@ namespace ejemplo2
             Ejercicios.Ejercicio03(99);
             
             int numero = 2;
+
             while (2 < numero)
             {
                 if (Utils.IsPrime(numero))
