@@ -33,6 +33,23 @@ namespace ejemplo2
                 i++;
             }
         }
+
+        // Ejercicio: Hacer una función que imprima por pantalla si un Número es primo o no. lo vamos hacer en 2 partes
+        //Dónde ponemos una función que nos devuelva si un número es primo o no.
+
+        public static void Ejercicio03 (int numero)
+        {
+            bool es_primo = Utils.IsPrime(numero);
+           
+            if ( es_primo)
+            {
+                System.Console.WriteLine(" El numero" + numero + " es primo");
+                System.Console.WriteLine(" El numero" + numero + " no es primo");
+            }
+
+        }
+
+
     }
 
 

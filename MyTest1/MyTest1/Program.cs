@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Design.Serialization;
 using System.Runtime.InteropServices.ComTypes;
+using System.Xml.Schema;
 
 namespace ejemplo2
 {
@@ -48,6 +49,19 @@ namespace ejemplo2
             Ejercicios.Ejercicio01();
 
             Ejercicios.Ejercicio02(13);
+
+            Ejercicios.Ejercicio03(99);
+            
+            int numero = 2;
+            while (2 < numero)
+            {
+                if (Utils.IsPrime(numero))
+                numero++;
+            }
+
+            
+
+            
 
         }
 
