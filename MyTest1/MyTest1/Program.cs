@@ -54,9 +54,11 @@ namespace ejemplo2
             
             int numero = 2;
 
-            while (2 < numero)
+            while ( numero < 65)
             {
-                if (Utils.IsPrime(numero))
+                if (Utils.IsPrime(3))
+
+                    System.Console.WriteLine(" ES PRIMO: " + numero);
                 numero++;
             }
 

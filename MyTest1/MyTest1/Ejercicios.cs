@@ -25,7 +25,7 @@ namespace ejemplo2
         public static void Ejercicio02(int n)
         {
             int i = 0;
-            while (1 < n)
+            while (i < n)
             {
                 if (Utils.IsEver(i))
 
