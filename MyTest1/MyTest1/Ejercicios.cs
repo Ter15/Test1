@@ -49,6 +49,58 @@ namespace ejemplo2
 
         }
 
+        //  Ejercicio: hacer una función que imprima lo siguiente: 0,1,2,3,4,5,6.....100.
+        public static void EjercicioSerie1()        
+        {
+            int i = 0;
+            while (i <= 100)
+            {
+
+                System.Console.WriteLine("La solución es:" + i);
+
+               i++;
+            }
+        }
+
+        // Ejercicio: hacer que salgan numeros pares, sin tocar lo de arriba.  se multiplica por 2 la i y te sale en pantalla los numeros pares.
+        public static void Ejercicioserie2()
+        {
+            int i = 2;
+            while (i <= 100)
+            {
+                System.Console.WriteLine("La solución es:" + i*2);
+                i++;
+            }
+        }
+        // Ejercicio: que salgan numeros asi: 1, 4, 7, 10, 13,.....
+
+        public static void EjercicioSerie3()
+        {
+
+            int i = 0;
+
+            while ( i <= 100)
+            {
+                System.Console.WriteLine(" La solución es " + (i * 3 + 1) );
+                i++;
+            }
+
+        }
+        //Ejercicio: 0, 1,4,9,16,25,36,....
+        public static void EjercicioSerie04()
+        {
+            int i = 0;
+            while ( i <= 100)
+            {
+                System.Console.WriteLine (" La solución es " (i * i) );
+                i++;
+            }
+
+       
+
+        }
+
+
 
     }
 

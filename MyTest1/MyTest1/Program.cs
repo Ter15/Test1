@@ -62,8 +62,10 @@ namespace ejemplo2
                 numero++;
             }
 
-            
-
+            Ejercicios.EjercicioSerie1();
+            Ejercicios.Ejercicioserie2();
+            Ejercicios.EjercicioSerie3();
+            Ejercicios.EjercicioSerie04();
             
 
         }
