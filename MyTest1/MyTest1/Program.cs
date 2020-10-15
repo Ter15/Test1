@@ -66,7 +66,7 @@ namespace ejemplo2
             Ejercicios.Ejercicioserie2();
             Ejercicios.EjercicioSerie3();
             Ejercicios.EjercicioSerie04();
-            
+            Ejercicios.EjercicioSerie05();
 
         }
 

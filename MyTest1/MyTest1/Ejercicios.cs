@@ -42,10 +42,13 @@ namespace ejemplo2
             bool es_primo = Utils.IsPrime(numero);
            
             if ( es_primo)
-            {
+            
                 System.Console.WriteLine(" El numero" + numero + " es primo");
+
+                else
+
                 System.Console.WriteLine(" El numero" + numero + " no es primo");
-            }
+            
 
         }
 
@@ -92,14 +95,31 @@ namespace ejemplo2
             int i = 0;
             while ( i <= 100)
             {
-                System.Console.WriteLine (" La solución es " (i * i) );
+                System.Console.WriteLine (i * i);
                 i++;
             }
 
-       
+        }
+         // Ejercicio: QUE IMPRIMA POR PANTALLA LA SIGUIENTE SECUENCIA: 0, -1, 2, -3, 4, -5, 6, -7, 8,...100
+         // SE PUEDE IMPRIMIR POR PARTALLA EN CUALQUIER LUGAR. EL RETURN ES PARA CUALQUIER FUNCION QUE TU NECESITES QUE TE DEVUELVA ALGO.
+        public static void EjercicioSerie05()
+        {
+            int i = 0;
+            while (i <= 100)
+            {
+                if (( i % 2 ) == 0)
+
+                    System.Console.WriteLine(i);
+
+                else
+
+                    System.Console.WriteLine(-i);
+
+                i++;
+            }
+            
 
         }
-
 
 
     }
