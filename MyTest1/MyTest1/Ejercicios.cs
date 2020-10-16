@@ -69,7 +69,7 @@ namespace ejemplo2
         public static void Ejercicioserie2()
         {
             int i = 2;
-            while (i <= 100)
+            while (i <= 10)
             {
                 System.Console.WriteLine("La solución es:" + i*2);
                 i++;
@@ -82,7 +82,7 @@ namespace ejemplo2
 
             int i = 0;
 
-            while ( i <= 100)
+            while ( i <= 10)
             {
                 System.Console.WriteLine(" La solución es " + (i * 3 + 1) );
                 i++;
@@ -93,21 +93,22 @@ namespace ejemplo2
         public static void EjercicioSerie04()
         {
             int i = 0;
-            while ( i <= 100)
+            while ( i <= 10)
             {
                 System.Console.WriteLine (i * i);
                 i++;
             }
 
         }
-         // Ejercicio: QUE IMPRIMA POR PANTALLA LA SIGUIENTE SECUENCIA: 0, -1, 2, -3, 4, -5, 6, -7, 8,...100
-         // SE PUEDE IMPRIMIR POR PARTALLA EN CUALQUIER LUGAR. EL RETURN ES PARA CUALQUIER FUNCION QUE TU NECESITES QUE TE DEVUELVA ALGO.
+        // Ejercicio: QUE IMPRIMA POR PANTALLA LA SIGUIENTE SECUENCIA: 0, -1, 2, -3, 4, -5, 6, -7, 8,...100
+        // SE PUEDE IMPRIMIR POR PARTALLA EN CUALQUIER LUGAR. EL RETURN ES PARA CUALQUIER FUNCION QUE TU NECESITES QUE TE DEVUELVA ALGO. 
+        //puedes usar la funcion idiotaaaaaaaa IsEven
         public static void EjercicioSerie05()
         {
             int i = 0;
             while (i <= 100)
             {
-                if (( i % 2 ) == 0)
+                if (( i % 2 ) == 0)   // if (utils.IsEven(i))
 
                     System.Console.WriteLine(i);
 
@@ -118,10 +119,30 @@ namespace ejemplo2
                 i++;
             }
             
-
         }
 
+        //Ejercicio: 0,1,1,2,3,5,8,13,21,34,.... (serie figonacci) 
+        //La i no interviene en nada. NENA NO PONGAS UN 1 DONDE VA UNA i !!!!!!!!!!!!!!!!!!!!
+        public static void EjercicioSerie06()
+        {
+            int a = 1;
+            int aa = 0;
+            int i = 0;
+            System.Console.WriteLine(aa);
+            System.Console.WriteLine(a);
 
+            while (i < 100)
+            {
+                System.Console.WriteLine(a + aa);
+
+                int aux = aa;
+                aa = a;
+                a = aux + aa;
+
+                i++;
+
+            }
+        }
     }
 
 

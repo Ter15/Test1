@@ -61,12 +61,13 @@ namespace ejemplo2
                 
                 numero++;
             }
-
+            // nota: he cambiado los 100 por 10 para que no tarde tanto en procesar la información.ejmplo: (i < 100) a (i < 10)
             Ejercicios.EjercicioSerie1();
             Ejercicios.Ejercicioserie2();
             Ejercicios.EjercicioSerie3();
             Ejercicios.EjercicioSerie04();
             Ejercicios.EjercicioSerie05();
+            Ejercicios.EjercicioSerie06();
 
         }
 
