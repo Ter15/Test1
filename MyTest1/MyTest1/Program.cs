@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MyTest1;
+using System;
 using System.ComponentModel.Design.Serialization;
 using System.Runtime.InteropServices.ComTypes;
 using System.Xml.Schema;
@@ -69,6 +70,8 @@ namespace ejemplo2
             Ejercicios.EjercicioSerie05();
             Ejercicios.EjercicioSerie06();
 
+            SOY_IDIOTA.EsMayor(7, 8);
+            SOY_IDIOTA.EsMenor(7, 8);
         }
 
 
