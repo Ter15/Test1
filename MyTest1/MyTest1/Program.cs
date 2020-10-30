@@ -10,7 +10,7 @@ namespace ejemplo2
     {
         static void Main(string[] args)
         {
-
+            /*
             double solution;
 
             solution = EquationSolvers.SolveEquation2(4.0, 5.8, 9.0);
@@ -69,9 +69,17 @@ namespace ejemplo2
             Ejercicios.EjercicioSerie04();
             Ejercicios.EjercicioSerie05();
             Ejercicios.EjercicioSerie06();
+            Ejercicios.TablaAsciis();
+            */
 
+
+<<<<<<< Updated upstream
             SOY_IDIOTA.EsMayor(7, 8);
             SOY_IDIOTA.EsMenor(7, 8);
+=======
+           int result =  Ejercicios_EXAMEN.SumarNumeros( 4 ,7);
+           int solucion = Ejercicios_EXAMEN.RestaReales(15, 5);
+>>>>>>> Stashed changes
         }
 
 

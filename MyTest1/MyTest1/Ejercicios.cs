@@ -143,6 +143,25 @@ namespace ejemplo2
 
             }
         }
+        // vamos a realizar un rpogram que imprima la tabla ascii y nos va a enseñar un nueva intruccion de flujo.
+        public static void TablaAsciis()
+        {
+            //int i = 0 ;
+            //while (1 < = 255)   
+            //{ 
+            //.....     esta instrucción es la misma que la de abajo pero con otra formula mas abrebiada 
+            //i++
+            //}
+
+            for (int i = 33; i <= 255; i++)
+            {
+                System.Console.Write(i);
+                System.Console.Write(") es el caracter [");
+                System.Console.Write((char)i);
+                System.Console.WriteLine("]");
+            }
+
+        }
     }
 
 
