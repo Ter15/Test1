@@ -72,14 +72,13 @@ namespace ejemplo2
             Ejercicios.TablaAsciis();
             */
 
-
-<<<<<<< Updated upstream
-            SOY_IDIOTA.EsMayor(7, 8);
-            SOY_IDIOTA.EsMenor(7, 8);
-=======
            int result =  Ejercicios_EXAMEN.SumarNumeros( 4 ,7);
            int solucion = Ejercicios_EXAMEN.RestaReales(15, 5);
->>>>>>> Stashed changes
+
+            int G = Ejercicios_EXAMEN.EsMayorDe3(3, 4, 6);
+
+           Ejercicios_EXAMEN.ErrorCodigo(0);
+           Ejercicios_EXAMEN.SerieNumeros(3);
         }
 
 
