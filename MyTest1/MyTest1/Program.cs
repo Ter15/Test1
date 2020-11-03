@@ -70,8 +70,10 @@ namespace ejemplo2
             Ejercicios.EjercicioSerie05();
             Ejercicios.EjercicioSerie06();
             Ejercicios.TablaAsciis();
-            */
+           
 
+            *********+AQUÍ EMPIEZAN LOS EJERCICIOS DE EXAMEN********
+            
            int result =  Ejercicios_EXAMEN.SumarNumeros( 4 ,7);
            int solucion = Ejercicios_EXAMEN.RestaReales(15, 5);
 
@@ -81,6 +83,15 @@ namespace ejemplo2
            Ejercicios_EXAMEN.SerieNumeros(3);
          
           Ejercicios_EXAMEN.ImprimirTodosLosNumeros(9);
+          Ejercicios_EXAMEN.ImprimirUltimoSinComa(10);
+          Ejercicios_EXAMEN.Asteriscos(4);
+          Ejercicios_EXAMEN.SerieAsteriscosSumas(34);
+           
+          Ejercicios_EXAMEN.SerieMasCompleja(45);
+             
+            Ejercicios_EXAMEN.HacerCuadrados(6);
+            */
+            Ejercicios_EXAMEN.VarienteCuadrados(8);
         }
 
 

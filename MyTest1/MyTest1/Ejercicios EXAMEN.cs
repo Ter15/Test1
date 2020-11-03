@@ -1,5 +1,8 @@
 ﻿
+using ejemplo2;
+using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
+using System.Resources;
 using System.Threading.Tasks.Dataflow;
 
 namespace MyTest1
@@ -112,12 +115,106 @@ namespace MyTest1
         public static void ImprimirTodosLosNumeros(int numero)
         {
 
-            for (int i = 0; i <= numero; i++) System.Console.WriteLine(i);
-                                      
+            for (int i = 0; i <= numero; i++)
+                System.Console.Write(i + ",");
+
         }
-            
-    }  
+        // hacer lo mismo que el ejercicio anterior pero sin "," al final   
+        public static void ImprimirUltimoSinComa(int numero)
+        {
+            int i; // se declara la variable fuera para que pueda cogerla el if de abajo.
+            for (i = 0; i < numero; i++)
+                System.Console.Write(i + ",");
 
+            if (numero > 0) ;
+            System.Console.Write(numero);
+        }
+        // quiero una funcion que devuelva el mayor de 6 enteros. quiero que esa funcion ocupe una linea. HECHO EN LA LIBRETA
+        public static int MayorDe6(int a, int b, int c, int d, int e, int f)
+        {
+            return EsMayor(EsMayorDe3(a, b, c), EsMayorDe3(d, e, f));
+        }
+        // hacer una funcion que se le pase un entero e imprima tantos astericos como ese entero que se le pasa. Ejemoplo: 
+        // SI SE EL NUEMRO DE VECES QUE SE CA A EJECUTAR UN BUCLE ES ACONSEJABLE EL FOR
+        public static void Asteriscos(int numero)
+        {
+            for (int i = 0; i <= numero; i++)
+                System.Console.Write("*");
+        }
+        //lo mismo pero en vez de imprimer asterisco imprme lo siguiente: *+*(3) *+*+*+*(7)
+        public static void SerieAsteriscosSumas(int numero)
+        {
 
+            for (int i = 0; i <= numero; i++)
+            {
+                if ((i % 2) == 0)   // esta es la mejor forma que no te ha salido    if ( utils.IsEven(i))
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("+");
+            }
+
+        }
+        //igual  que la funcion de arriba pero tiene que imprimir lo siguiente: *+-/*+-/....
+        public static void SerieMasCompleja(int numero)
+        {
+            for (int i = 0; i <= numero; i++)
+            {
+                switch (i % 4)
+                {
+                    case 0:
+                        System.Console.Write("*");
+                        break;
+                    case 1:
+                        System.Console.Write("+");
+                        break;
+                    case 2:
+                        System.Console.Write("-");
+                        break;
+                    case 3:
+                        System.Console.Write("/");
+                        break;
+
+                }
+            }
+
+        }
+        //HACER UNA FUNCION QUE RECIBA UN NUMERO Y EN FUNCION DE ESE NUMERO 
+        //QUE IMPRIMA LO SIGUIENTE: SI LE PASO UN 3 HACER UNA UN CUADRADO DE 3X3 CON ASTERISCOS. aqui cuidado con el igual q sino te imprime un numero mas del q pides
+        public static void HacerCuadrados(int numero)
+        {
+            for (int f = 0; f < numero; f++) // f de fila en castellano, en ingles i
+            {
+                for (int c = 0; c < numero; c++) // c de columna en castellano, en ingles j
+
+                    System.Console.Write("*");
+
+                System.Console.WriteLine();
+            }
+
+        }
+        // otro ejercicio: 
+        public static void VarienteCuadrados(int numero)
+        {
+            int f;
+            int c;
+            for (f = 0; f < numero; f++)
+            {
+                for (c = 0; c < numero; c++)
+                {
+                    if ((f % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+        // *+*+
+        //  +*+*
+        //  *+*+
+        //  +*+*
+
+    }
 }
    
