@@ -79,6 +79,8 @@ namespace ejemplo2
 
            Ejercicios_EXAMEN.ErrorCodigo(0);
            Ejercicios_EXAMEN.SerieNumeros(3);
+         
+          Ejercicios_EXAMEN.ImprimirTodosLosNumeros(9);
         }
 
 

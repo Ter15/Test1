@@ -21,7 +21,7 @@ namespace MyTest1
         {
 
             int result = a - b;
-             return result;
+            return result;
         }
         // hace 2 funciones que que reciban 2 reaales la primera que devuleva el menor de los
         //dos reales y la segunda que devuleva el mayor d elos 2 reales.
@@ -40,7 +40,7 @@ namespace MyTest1
                 return a;
         }
         //hacer una función que se le pasen 3 enteros y que devuelva el mayor d elos 3
-        public static int EsMayorDe3 (int a, int b, int c)
+        public static int EsMayorDe3(int a, int b, int c)
         {
             if (a > b)
             {
@@ -53,21 +53,21 @@ namespace MyTest1
             {
                 if (b > c)
                     return b;
-                  else
-                   return c;
-            }           
+                else
+                    return c;
+            }
         }
         // hacer una funcion que reciba dos enteros 
         //y devuleva -1 si el primero es menos que el segundo y 1 si el segundo es menor que el primero y 0 si son iguales 
-        public static int DEVOLVER (int a, int b)
+        public static int DEVOLVER(int a, int b)
         {
             if (a < b)
             {
                 return -1;
             }
-            if( a > b)
+            if (a > b)
             {
-                return 0;                    
+                return 0;
             }
             return 1;
         }
@@ -76,10 +76,10 @@ namespace MyTest1
         // " error moderado"  si el error es 1
         // " error leve"  si el error es 2
         // " error desconocido"  en cualquier otro caso
-        public static void  ErrorCodigo ( int code)
+        public static void ErrorCodigo(int code)
         {
-           switch (code)
-           {
+            switch (code)
+            {
                 case 0:
                     System.Console.WriteLine(" ERROR GRAVE");
                     break;
@@ -93,22 +93,31 @@ namespace MyTest1
                     System.Console.WriteLine(" Error desconocido");
                     break;
 
-           }
+            }
         }
         // haced una función que reciba un numero y en funcion de ese numero escriba la siguiente serie:
         // ejemplo : 0,3,6,9,12...   función(10) : 0,3,6,9.
-        public static void SerieNumeros ( int code)
+        public static void SerieNumeros(int code)
         {
             int i = 0;
 
-            while(i <= code)
+            while (i <= code)
             {
-                System.Console.Write( i + "," );
+                System.Console.Write(i + ",");
 
-                i+=3;
+                i += 3;
             }
         }
         // HACER UNA FUNCIÓN QUE RECIBA UN NUMERO ENTERO E IMPRIMA TODOS LOS NUMEROS DESDE EL 0 HASTA ESE NUMERO. HAY QUE UTILIZAR UN FOR
-    }
+        public static void ImprimirTodosLosNumeros(int numero)
+        {
+
+            for (int i = 0; i <= numero; i++) System.Console.WriteLine(i);
+                                      
+        }
+            
+    }  
+
+
 }
    
