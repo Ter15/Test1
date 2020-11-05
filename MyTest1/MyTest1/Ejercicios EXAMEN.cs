@@ -209,12 +209,26 @@ namespace MyTest1
                 System.Console.WriteLine();
             }
         }
-
         // *+*+
         //  +*+*
         //  *+*+
         //  +*+*
-
+        public static void AsteriscoSuma(int numero)
+        {
+            int f;
+            int c;
+            for (f = 0; f < numero; f++)
+            {
+                for (c = 0; c < numero; c++)
+                {                    
+                    if ((c % 2) == 0)
+                        System.Console.Write("+");
+                    else
+                        System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
+        }
     }
 }
    

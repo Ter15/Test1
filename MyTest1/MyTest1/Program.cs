@@ -92,6 +92,7 @@ namespace ejemplo2
             Ejercicios_EXAMEN.HacerCuadrados(6);
             */
             Ejercicios_EXAMEN.VarienteCuadrados(8);
+            Ejercicios_EXAMEN.AsteriscoSuma(6);
         }
 
 
