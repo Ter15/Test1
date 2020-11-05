@@ -217,15 +217,69 @@ namespace MyTest1
         {
             int f;
             int c;
+            
             for (f = 0; f < numero; f++)
             {
                 for (c = 0; c < numero; c++)
-                {                    
-                    if ((c % 2) == 0)
-                        System.Console.Write("+");
-                    else
+                {
+                    int flag = c + f;
+
+                    if ((flag % 2) == 0)
                         System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
                 }
+                System.Console.WriteLine();
+            }
+        }
+        public static void AsterisEscalera(int numero)
+        {
+            int f;
+            int c;
+
+            for (f = 0; f < numero; f++)
+            {
+                for (c = 0; c <= f; c++)
+                {                    
+                        System.Console.Write("*");
+                   
+                }
+                System.Console.WriteLine();
+            }
+        }
+        public static void AsteriscosEscaleraInversa(int numero)
+        {
+            int f;
+            int c;
+            for (f = 0; f < numero; f++)
+            {
+                int nEspacios = numero -  f -  1;
+                int nAsteriscos = f + 1;
+
+                for (c = 0; c < nEspacios; c++)
+                    System.Console.Write(" ");
+
+                for (c = 0; c < nAsteriscos; c++)
+                    System.Console.Write("*");
+
+                System.Console.WriteLine();
+            }
+        }
+        public static void Piramide ( int numero)
+        {
+            int f;
+            int c;
+            for (f = 0; f < numero; f++)
+            {
+                int nAsterisco1 = numero - f - 1;
+                int nAsteriscos2 = f*2;
+
+                for (c = 0; c < nAsterisco1; c++)
+                    System.Console.Write("*");
+
+                for (c = 0; c < nAsteriscos2; c++)
+                    System.Console.Write("*");
+
                 System.Console.WriteLine();
             }
         }
