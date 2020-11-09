@@ -272,17 +272,46 @@ namespace MyTest1
             for (f = 0; f < numero; f++)
             {
                 int nAsterisco1 = numero - f - 1;
-                int nAsteriscos2 = f*2;
+                int nAsteriscos2 = f * 2;
 
                 for (c = 0; c < nAsterisco1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                
+                
+                    for (c = 0; c < nAsteriscos2; c++)
+                    System.Console.Write(" ");
                     System.Console.Write("*");
 
-                for (c = 0; c < nAsteriscos2; c++)
-                    System.Console.Write("*");
-
-                System.Console.WriteLine();
+                    System.Console.WriteLine(" ");
+                
             }
         }
+        //PIRAMIDE 2.0
+        public static void Piramide2 ( int numero)
+        {
+
+            int f;
+            int c;
+            for (f = 0; f < numero; f++)
+            {
+                int nAsterisco1 = numero - f - 1;
+                int nAsteriscos2 = f * 2;
+
+                for (c = 0; c < nAsterisco1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                for (c = 1; c < nAsteriscos2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*\n");
+               
+
+            }
+        }
+
     }
+    
 }
    

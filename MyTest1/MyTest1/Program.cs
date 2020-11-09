@@ -90,12 +90,15 @@ namespace ejemplo2
           Ejercicios_EXAMEN.SerieMasCompleja(45);
              
             Ejercicios_EXAMEN.HacerCuadrados(6);
-            */
+           
             Ejercicios_EXAMEN.VarienteCuadrados(8);
             Ejercicios_EXAMEN.AsteriscoSuma(6);
             Ejercicios_EXAMEN.AsterisEscalera(9);
             Ejercicios_EXAMEN.AsteriscosEscaleraInversa(8);
-            Ejercicios_EXAMEN.Piramide(7);
+            */
+           Ejercicios_EXAMEN.Piramide(7);
+            
+           Ejercicios_EXAMEN.Piramide2(5);
         }
 
 
