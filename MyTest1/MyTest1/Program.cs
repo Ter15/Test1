@@ -95,10 +95,27 @@ namespace ejemplo2
             Ejercicios_EXAMEN.AsteriscoSuma(6);
             Ejercicios_EXAMEN.AsterisEscalera(9);
             Ejercicios_EXAMEN.AsteriscosEscaleraInversa(8);
-            */
+            
            Ejercicios_EXAMEN.Piramide(7);
             
            Ejercicios_EXAMEN.Piramide2(5);
+            Ejercicios_EXAMEN.Piramide3(6);
+            Ejercicios_EXAMEN.Rombo(8);         
+            
+            while (true)
+            {
+                for (int i=0; i< 10; i++ )
+                {
+                    Ejercicios_EXAMEN.Rombo(i);
+                    System.Threading.Thread.Sleep(50);
+                    System.Console.Clear();
+                }
+            }
+            */
+
+
+            Ejercicios_EXAMEN.BanderaAmericana();
+
         }
 
 

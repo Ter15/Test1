@@ -297,20 +297,91 @@ namespace MyTest1
             for (f = 0; f < numero; f++)
             {
                 int nAsterisco1 = numero - f - 1;
-                int nAsteriscos2 = f * 2;
+                int nAsteriscos2 = f * 2 -1; // MaxValue (0, 2 * f -1) para que cuando f sea 0, la solucion no sea -1
 
                 for (c = 0; c < nAsterisco1; c++)
                     System.Console.Write(" ");
                 System.Console.Write("*");
 
-                for (c = 1; c < nAsteriscos2; c++)
+                for (c = 0; c < nAsteriscos2; c++)
                     System.Console.Write(" ");
-                System.Console.Write("*\n");
-               
+               if ( f != 0)
+                    System.Console.Write("*");
+
+                System.Console.WriteLine(" ");
+
 
             }
         }
 
+        // piramide 3
+
+        public static void Piramide3 ( int numero)
+        {
+            int f;
+            int c;
+            for ( f = 0; f < numero; f++)
+            {
+                int nAsterisco1 = f;
+                int nAsteriscos2 = ( numero - f - 1) * 2 ;
+                
+                for (c = 0; c < nAsterisco1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                for (c = 0; c < nAsteriscos2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+               
+                System.Console.WriteLine(" ");
+
+            }
+
+        }
+        // Rombo
+        public static void Rombo(int numero)
+        {
+            Piramide(numero);
+            Piramide3(numero);
+
+        }
+
+    // BANDERA AMERICANA
+        public static void BanderaAmericana ()
+        {
+            int f;
+            int c;
+            
+            for (f = 0; f < 10; f++)
+            {
+                for (c = 0; c < 20; c++)
+                {
+                    int f2 = f / 2;
+
+                    if (0 <= c && c <= 8 && 0 <= f && f <= 2)
+                    {
+                        int flag = c + f;
+                        if (Utils.IsEven(flag))
+                        {
+                            System.Console.Write("+");
+                        }
+                        else
+                        {
+                            System.Console.Write(" ");
+                        }
+                    }
+                    else if (Utils.IsEven(f2))
+                    {
+                        System.Console.Write("*");
+                    }
+                    else
+                    {
+                        System.Console.Write(" ");
+                    }
+                }
+                System.Console.WriteLine();
+            }
+        }
     }
     
 }

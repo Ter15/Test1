@@ -27,7 +27,7 @@ namespace ejemplo2
             int i = 0;
             while (i < n)
             {
-                if (Utils.IsEver(i))
+                if (Utils.IsEven(i))
 
                     System.Console.WriteLine(i);
                 i++;

@@ -28,7 +28,7 @@
 
         }   
          
-        public static bool IsEver( int value)
+        public static bool IsEven( int value)
         {
             if ((value % 2) == 0)
 
