@@ -115,7 +115,7 @@ namespace ejemplo2
 
 
             Ejercicios_EXAMEN.BanderaAmericana();
-
+            Ejercicios_EXAMEN.BanderaJaponesa();
         }
 
 

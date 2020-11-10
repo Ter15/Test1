@@ -160,13 +160,8 @@ namespace ejemplo2
                 System.Console.Write((char)i);
                 System.Console.WriteLine("]");
             }
-
         }
     }
-
-
-
-
 }
 
 

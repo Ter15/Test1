@@ -383,6 +383,29 @@ namespace MyTest1
             }
         }
     }
-    
+    public static void BnaderaJaponesa()
+    {
+        int f;
+        int c;
+        for (f = 0; f < 20; f++)
+        {
+            for (c = 0; c < 50; c++)
+            {
+                if (c == 0 || c == 50 || f == 0 || f == 20)
+                {
+                    System.Console.Write("*");
+                }
+                else if ( distance (25, 10, c, f) < 5.0)
+                {
+                    System.Console.Write("0");
+                }
+                else
+                {
+                    System.Console.Write(" ");
+                }
+            }
+        }
+
+    }
 }
    
