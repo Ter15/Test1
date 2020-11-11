@@ -1,5 +1,6 @@
 ﻿
 using ejemplo2;
+using System;
 using System.Collections.Generic;
 using System.Reflection.Metadata.Ecma335;
 using System.Resources;
@@ -217,7 +218,7 @@ namespace MyTest1
         {
             int f;
             int c;
-            
+
             for (f = 0; f < numero; f++)
             {
                 for (c = 0; c < numero; c++)
@@ -240,9 +241,9 @@ namespace MyTest1
             for (f = 0; f < numero; f++)
             {
                 for (c = 0; c <= f; c++)
-                {                    
-                        System.Console.Write("*");
-                   
+                {
+                    System.Console.Write("*");
+
                 }
                 System.Console.WriteLine();
             }
@@ -253,7 +254,7 @@ namespace MyTest1
             int c;
             for (f = 0; f < numero; f++)
             {
-                int nEspacios = numero -  f -  1;
+                int nEspacios = numero - f - 1;
                 int nAsteriscos = f + 1;
 
                 for (c = 0; c < nEspacios; c++)
@@ -265,7 +266,7 @@ namespace MyTest1
                 System.Console.WriteLine();
             }
         }
-        public static void Piramide ( int numero)
+        public static void Piramide(int numero)
         {
             int f;
             int c;
@@ -278,18 +279,18 @@ namespace MyTest1
                     System.Console.Write(" ");
                 System.Console.Write("*");
 
-                
-                
-                    for (c = 0; c < nAsteriscos2; c++)
-                    System.Console.Write(" ");
-                    System.Console.Write("*");
 
-                    System.Console.WriteLine(" ");
-                
+
+                for (c = 0; c < nAsteriscos2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                System.Console.WriteLine(" ");
+
             }
         }
         //PIRAMIDE 2.0
-        public static void Piramide2 ( int numero)
+        public static void Piramide2(int numero)
         {
 
             int f;
@@ -297,7 +298,7 @@ namespace MyTest1
             for (f = 0; f < numero; f++)
             {
                 int nAsterisco1 = numero - f - 1;
-                int nAsteriscos2 = f * 2 -1; // MaxValue (0, 2 * f -1) para que cuando f sea 0, la solucion no sea -1
+                int nAsteriscos2 = f * 2 - 1; // MaxValue (0, 2 * f -1) para que cuando f sea 0, la solucion no sea -1
 
                 for (c = 0; c < nAsterisco1; c++)
                     System.Console.Write(" ");
@@ -305,7 +306,7 @@ namespace MyTest1
 
                 for (c = 0; c < nAsteriscos2; c++)
                     System.Console.Write(" ");
-               if ( f != 0)
+                if (f != 0)
                     System.Console.Write("*");
 
                 System.Console.WriteLine(" ");
@@ -316,15 +317,15 @@ namespace MyTest1
 
         // piramide 3
 
-        public static void Piramide3 ( int numero)
+        public static void Piramide3(int numero)
         {
             int f;
             int c;
-            for ( f = 0; f < numero; f++)
+            for (f = 0; f < numero; f++)
             {
                 int nAsterisco1 = f;
-                int nAsteriscos2 = ( numero - f - 1) * 2 ;
-                
+                int nAsteriscos2 = (numero - f - 1) * 2;
+
                 for (c = 0; c < nAsterisco1; c++)
                     System.Console.Write(" ");
                 System.Console.Write("*");
@@ -332,7 +333,7 @@ namespace MyTest1
                 for (c = 0; c < nAsteriscos2; c++)
                     System.Console.Write(" ");
                 System.Console.Write("*");
-               
+
                 System.Console.WriteLine(" ");
 
             }
@@ -346,12 +347,12 @@ namespace MyTest1
 
         }
 
-    // BANDERA AMERICANA
-        public static void BanderaAmericana ()
+        // BANDERA AMERICANA
+        public static void BanderaAmericana()
         {
             int f;
             int c;
-            
+
             for (f = 0; f < 10; f++)
             {
                 for (c = 0; c < 20; c++)
@@ -382,30 +383,31 @@ namespace MyTest1
                 System.Console.WriteLine();
             }
         }
-    }
-    public static void BnaderaJaponesa()
-    {
-        int f;
-        int c;
-        for (f = 0; f < 20; f++)
+
+        public static void BnaderaJaponesa()
         {
-            for (c = 0; c < 50; c++)
+            double f;
+            double c;
+            //int d;
+            for (f = 0; f < 19; f++)
             {
-                if (c == 0 || c == 50 || f == 0 || f == 20)
+                for (c = 0; c < 74; c++)
                 {
-                    System.Console.Write("*");
-                }
-                else if ( distance (25, 10, c, f) < 5.0)
-                {
-                    System.Console.Write("0");
-                }
-                else
-                {
-                    System.Console.Write(" ");
+                    if (c == 0 || c == 74 || f == 0 || f == 19)
+                    {
+                        System.Console.Write("*");
+                    }
+                    else if (Geometric.CalculateDistance2D( 37, 10, c, f) < 5.0)                                       //( d = Math.Sqrt (Math.Pow((20 - f), 2) + Math.Pow((50 - c), 2) < 5.0))
+                    {
+                        System.Console.Write("0");
+                    }
+                    else
+                    {
+                        System.Console.Write(" ");
+                    }
                 }
             }
         }
-
     }
 }
    
