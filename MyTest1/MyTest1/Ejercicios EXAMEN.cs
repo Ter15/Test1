@@ -393,11 +393,11 @@ namespace MyTest1
             {
                 for (c = 0; c < 74; c++)
                 {
-                    if (c == 0 || c == 74 || f == 0 || f == 19)
+                    if (c == 0 || c == 73 || f == 0 || f == 18)
                     {
                         System.Console.Write("*");
                     }
-                    else if (Geometric.CalculateDistance2D( 37, 10, c, f) < 5.0)                                       //( d = Math.Sqrt (Math.Pow((20 - f), 2) + Math.Pow((50 - c), 2) < 5.0))
+                    else if (Geometric.CalculateDistance2D( 37, 10, c, f) < 5.0)  //( d = Math.Sqrt (Math.Pow((20 - f), 2) + Math.Pow((50 - c), 2) < 5.0))
                     {
                         System.Console.Write("0");
                     }
@@ -406,8 +406,65 @@ namespace MyTest1
                         System.Console.Write(" ");
                     }
                 }
+                System.Console.WriteLine();
             }
         }
+       //HACER UNA FUNCIÓN QUE DEVULEVA EL SUMATORIA DE UN NUMERO.
+       public static int Sumatorio ( int numero)
+       {
+            int i;
+            int result = 0;
+            for (i = 1; i <= numero; i++)
+            {
+                result += i;
+            }
+            return result;
+       }
+        // HAZ UNA FUNCION QUE DEVUELVA 2 ELEVADO A UN NUMERO
+       public static double Elevado2 (int numero)
+       {
+            int result = 1;
+            for ( int i = 0; i < numero; i++)
+            
+                result *= 2;
+                return result;            
+       }
+        public static double ElevadoNegativo2 (int numero)
+        {
+            if (numero >= 0)
+            {
+                int result = 1;
+                for (int i = 0; i < numero; i++)
+
+                    result *= 2;
+                return result;
+            }
+            else // potencias elevadas a menos algo 
+            {
+                double result = 1.0;
+                for ( int i = 0; i < - numero; i++)
+                    result /= 2;
+                return result;
+            }
+        }
+        public static double ElevadoNegativoOtraFormaDe102(int numero)
+        {
+            bool inverte_value = numero < 0;
+            if (inverte_value)
+                numero = -numero;
+
+            for (int i = 0; i < numero; i++)
+            {
+
+                result *= 2;
+
+              if (inverte_value)
+
+                    result 1.0 / result;
+                return result;
+            }
+        }
+
     }
 }
    
