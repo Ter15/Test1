@@ -452,15 +452,15 @@ namespace MyTest1
             bool inverte_value = numero < 0;
             if (inverte_value)
                 numero = -numero;
+            { 
+              for (int i = 0; i < numero; i++)
+              
+                if (inverte_value)
+                  result *= 2;
 
-            for (int i = 0; i < numero; i++)
-            {
-
-                result *= 2;
-
-              if (inverte_value)
-
-                    result 1.0 / result;
+                
+                  else 
+                result 1.0 / result;
                 return result;
             }
         }
