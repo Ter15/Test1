@@ -397,7 +397,7 @@ namespace MyTest1
                     {
                         System.Console.Write("*");
                     }
-                    else if (Geometric.CalculateDistance2D( 37, 10, c, f) < 5.0)  //( d = Math.Sqrt (Math.Pow((20 - f), 2) + Math.Pow((50 - c), 2) < 5.0))
+                    else if (Geometric.CalculateDistance2D( 37, 10, c, f) < 5.0)  
                     {
                         System.Console.Write("0");
                     }
