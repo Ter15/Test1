@@ -446,6 +446,8 @@ namespace MyTest1
                 return result;
             }
         }
+
+      /*
         public static double ElevadoNegativoOtraFormaDe102(int numero)
         {
             bool inverte_value = numero < 0;
@@ -463,6 +465,7 @@ namespace MyTest1
                 return result;
             }
         }
+        */
 
     }
 }
