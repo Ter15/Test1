@@ -191,7 +191,6 @@ namespace MyTest1
 
                 System.Console.WriteLine();
             }
-
         }
         // otro ejercicio: 
         public static void VarienteCuadrados(int numero)

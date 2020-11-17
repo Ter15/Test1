@@ -14,7 +14,7 @@ namespace ejemplo2
             double solution;
 
             solution = EquationSolvers.SolveEquation2(4.0, 5.8, 9.0);
-
+             
             solution = EquationSolvers.SolveEquation(6.0, 7.0);
 
 
