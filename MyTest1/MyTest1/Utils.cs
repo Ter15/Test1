@@ -56,7 +56,22 @@
             return true;
         }
 
-
+        public static int comodin()
+        {
+            while (true)
+            {
+                try
+                {
+                    System.Console.WriteLine(" introduce un número");
+                    int n1 = System.Convert.ToInt32(System.Console.ReadLine());
+                    return n1;
+                }
+                catch
+                {
+                    System.Console.WriteLine("HAS INTRODUCIDO UN ERROR");
+                }
+            }
+        }
     }
 
 
