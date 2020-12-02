@@ -278,8 +278,6 @@ namespace MyTest1
                     System.Console.Write(" ");
                 System.Console.Write("*");
 
-
-
                 for (c = 0; c < nAsteriscos2; c++)
                     System.Console.Write(" ");
                 System.Console.Write("*");
